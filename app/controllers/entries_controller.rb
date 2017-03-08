@@ -1,6 +1,6 @@
+# frozen_string_literal: true
 class EntriesController < ApplicationController
-  def index
-  end
+  def index; end
 
   def new
     @entry = Entry.new
@@ -16,5 +16,4 @@ class EntriesController < ApplicationController
   def entry_params
     params.require(:entry).permit(:three, :two, :one)
   end
-
 end

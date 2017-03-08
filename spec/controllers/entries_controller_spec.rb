@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require 'rails_helper'
 
 RSpec.describe EntriesController, type: :controller do
@@ -24,5 +25,4 @@ RSpec.describe EntriesController, type: :controller do
       expect(entry.three).to eq('3rd person')
     end
   end
-
 end
